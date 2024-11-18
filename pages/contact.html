@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="icon" href="../static/images/Babb__icon.png">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header--small">
+        <nav class="navbar navbar__non-transparent navbar--fixed">
+            <div class="navbar__content__left">
+                <a href="../index.html"><img class="navbar__image" src="../static/images/Babb__icon.png" alt="icon"></a>
+                <h1 class="navbar__title navbar--white__title">Babb</h1>
+            </div>
+            <ul class="navlist">
+                <li><a class="list-item" href="../pages/courses.html">Cursos</a></li>
+                <li><a class="list-item" href="../pages/about.html">Sobre nosotros</a></li>
+                <li><a class="list-item" href="../pages/method.html">Metodología</a></li>
+                <li><a class="list-item" href="../pages/contact.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <h2 class="banner__title--dark">¡Contáctanos!</h2>
+        <p class="text centered larger">¡Estamos aquí para ayudarte a mejorar la comunicación en tu empresa! Si tienes preguntas, quieres conocer más sobre nuestros cursos o necesitas asesoría personalizada, no dudes en ponerte en contacto con nosotros. </p>
+    </header>
+    <main class="main margined">
+        <form class="formulario">
+            <h3 class="form__title">Formulario de contacto</h3>
+            <label for="name" class="label">Nombre de tu empresa</label>
+            <input type="text" name="name" id="name" placeholder="Ingrese el nombre de su empresa">
+            <label for="person" class="label">Nombre del remitente</label>
+            <input type="text" name="person" id="person" placeholder="Ingrese su nombre">
+            <label for="email" class="label">Correo electrónico</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico">
+            <label for="phone" class="label">Teléfono</label>
+            <input type="tel" name="phone" id="phone" placeholder="Ingrese su teléfono">
+            <label for="curso" class="label">Escoge tu curso de interés</label>
+            <select name="curso" id="curso">
+                <option value="curso1">Alemán</option>
+                <option value="curso2">Francés</option>
+                <option value="curso3">Inglés</option>
+            </select>
+            <label for="message" class="label">Mensaje</label>
+            <textarea name="message" id="message" placeholder="Ingrese su mensaje"></textarea>
+            <button type="submit" class="btn-submit">Enviar</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__column">
+                <ul class="footer__nav">
+                    <li><a class="footer__item" href="./pages/courses.html">Cursos</a></li>
+                    <li><a class="footer__item" href="./pages/about.html">Sobre nosotros</a></li>
+                    <li><a class="footer__item" href="./pages/method.html">Metodología</a></li>
+                    <li><a class="footer__item" href="./pages/contact.html">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h6 class="mini_title">Redes sociales</h6>
+                <ul class="footer__nav">
+                    <li><a class="footer__item" rel="noopener norefferrer" href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a class="footer__item" rel="noopener norefferrer" href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a class="footer__item" rel="noopener norefferrer" href="https://x.com/?lang=es">X</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h6 class="mini_title">Contacto</h6>
+                <ul class="footer__nav">
+                    <li><a class="footer__item" href="mailto:correo@example.com">info@inglesonline.com</a></li>
+                    <li><a class="footer__item" href="tel:+1234567890">+34 123456789</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024</p>
+    </footer>    
+    
+</body>
+</html>
