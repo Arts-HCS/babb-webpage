@@ -283,7 +283,7 @@ body {
 }
 
 .section__title {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 400;
 }
 
@@ -847,6 +847,25 @@ input:focus, select:focus, textarea:focus {
     outline: none;
 }
 
+@media screen and (max-width: 1300px) {
+  .principal-container{
+    width: 1000px;
+    margin: 0 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px;
+  }
+  .purple, .gray, .white-large, .white, .dark-blue{
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .main--shorter{
+    height: 260vh;
+  }
+  .section--bigger{
+    height: 210vh;
+  }
+  
+}
 
 @media screen and (max-width: 1150px){
     .navbar__image{
@@ -873,6 +892,21 @@ input:focus, select:focus, textarea:focus {
     }
     .text{
         font-size: 15px;
+    }
+    .principal-container{
+      width: 700px;
+      margin: 0 10px;
+      grid-template-columns: 600fr;
+      grid-template-rows: 300px;
+    }
+    .container__body{
+      font-size: 17px;
+    }
+    .container__foter{
+      font-size: 12px;
+    }
+    .figure{
+      width: 400px;
     }
     .formulario{
         width: 600px;
@@ -921,6 +955,32 @@ input:focus, select:focus, textarea:focus {
     .text{
         font-size: 14px;
     }
+    .seciton__text{
+      padding: 15px;
+      flex-basis: 70%;
+    }
+    .section__text p{
+      width: 100%;
+    }
+    .text{
+      margin-top: 10px;
+    }
+    .principal-container{
+      width: 500px;
+      margin: 0 10px;
+      grid-template-columns: 400fr;
+      grid-template-rows: 300px;
+    }
+    .section--bigger{
+      height: 180vh;
+    }
+    .figure{
+      width: 250px;
+      height: 200px;
+    }
+    .section__title{
+      font-size: 1.5em;
+    }
     .formulario{
         margin-top: 40px;
         width: 500px;
@@ -963,6 +1023,13 @@ input:focus, select:focus, textarea:focus {
     }
     .banner__title--dark{
         font-size: 2.5rem;
+    }
+    .section__content{
+      width: 100%;
+      justify-content: space-between;
+      margin: 0 30px;
+      padding-bottom: 20px;
+      flex-direction: column;
     }
     .text{
         font-size: 14px;
@@ -1015,6 +1082,12 @@ input:focus, select:focus, textarea:focus {
         font-size: 13px;
         width: 80%;
     }
+    .principal-container{
+      width: 400px;
+      margin: 0 10px;
+      grid-template-columns: 400fr;
+      grid-template-rows: 300px;
+    }
     .formulario{
         margin-top: 30px;
         width: 400px;
@@ -1065,6 +1138,21 @@ input:focus, select:focus, textarea:focus {
     }
     .footer{
         height: 23vh;
+    }
+    .principal-container{
+      width: 350px;
+      margin: 0 10px;
+      grid-template-columns: 350fr;
+      grid-template-rows: 300px;
+    }
+    .container__body{
+      font-size: 15px;
+    }
+    .container__foter{
+      font-size: 10px;
+    }
+    .main--shorter{
+      height: 270vh;
     }
     .footer__content{
         height: 60%;
