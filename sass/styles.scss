@@ -1,0 +1,14 @@
+@use "variables" as vars;
+@use "mixins" as mixs;
+@use "extends" as exts;
+@use "normalize";
+@use "footer";
+@use "header";
+
+body{
+    font-family: vars.$principal-font;
+    color: vars.$principal-color-black;
+    font-weight: 400;
+    line-height: 1.2;
+    background-color: vars.$background-color;
+}
