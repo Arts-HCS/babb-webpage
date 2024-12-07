@@ -2,7 +2,11 @@
     width: 100%;
 }
 
-%fluid-height{
+%fluid-height-vh{
+    height: 100vh;
+}
+
+%fluid-height-per{
     height: 100%;
 }
 

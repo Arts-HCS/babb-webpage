@@ -1,7 +1,7 @@
 @mixin flex--space-between{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 @mixin flex--space-center{
@@ -20,12 +20,18 @@
 @mixin flex-column__center{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 @mixin position-fixed{
     position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@mixin position-absolute{
+    position: absolute;
     top: 0;
     left: 0;
 }
