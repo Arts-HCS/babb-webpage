@@ -1,0 +1,257 @@
+@use "../utilities/variables" as vars;
+@use "../utilities/mixins" as mixs;
+@use "../utilities/extends" as ext;
+@use "../utilities/normalize";
+
+.main--shorter {
+    width: 90%;
+    height: 200vh;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.section {
+    margin-top: 20px;
+    @extend %fluid-width;
+    height: 65vh;
+    @include mixs.flex--space-center;
+}
+.section__content {
+    width: 90%;
+    height: 90%;
+    @include mixs.flex--space-center;
+    border-bottom: 1px solid #d1d1d1;
+    .section__text {
+        flex-basis: 50%;
+        padding: 20px;
+        .section__title {
+            font-size: 2em;
+            font-weight: 400;
+        }
+        .text {
+            @extend %text;
+        }
+    }
+    .figure {
+        width: 600px;
+        height: 350px;
+        overflow: hidden;
+        @extend %no-border;
+        border: 1px solid #444;
+        border-radius: 30px;
+        .figure__image {
+            @extend %fluid-width;
+            @extend %fluid-height-per;
+            object-fit: cover;
+            @extend %transitioned;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.section--larger {
+    height: 80vh;
+    margin-top: 40px;
+
+    .section__content--column {
+        .header__content {
+            @extend %fluid-width;
+            @include mixs.flex-column__space-between;
+            flex-basis: 20%;
+
+            .section__title {
+                font-size: 2em;
+                font-weight: 400;
+            }
+
+            .text {
+                @extend %text;
+                @extend %centered;
+            }
+        }
+
+        .cards {
+            @extend %fluid-width;
+            flex-basis: 80%;
+            @include mixs.flex--space-between;
+            flex-wrap: wrap;
+
+            .card {
+                width: 260px;
+                height: 350px;
+                padding: 20px 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid #666;
+                box-shadow: 4px 5px 0 hsl(0, 0%, 77%);
+                border-radius: 10px;
+                background-color: #fefcf8;
+                @extend %transitioned;
+
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: 10px 10px 0 hsl(0, 0%, 77%);
+                }
+
+                .rounded-image {
+                    width: 170px;
+                    height: 150px;
+                    border-radius: 20px;
+                    object-fit: cover;
+                    border: 1px solid #333;
+                }
+
+                .mini-titulo {
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+                .text{
+                    @extend %text;
+                    @extend %little-text;
+                }
+            }
+        }
+    }
+}
+
+
+.teacher-cards{
+    @extend %fluid-height-per;
+    flex-basis: 70%;
+    border-right: 1.7px solid #111;
+    background-color: #938f83;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+    overflow-y: scroll;
+    .card--large{
+        width: 600px;
+        height: 280px;
+        padding: 25px;
+        background-color: #d0d1cc;
+        border: 1px solid #222;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+        @extend %transitioned;
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .card__header{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .figure--little{
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                overflow: hidden;
+                object-fit: cover;
+                border: 1px solid #333;
+                .image__teacher{
+                    @extend %fluid-width;
+                    @extend %fluid-height-per;
+                    @extend %transitioned;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .card__titles{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-weight: 500;
+                font-size: 20px;
+                .card_title_light {
+                    color: #111;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .teacher-text{
+            font-size: 18px;
+            color: #222;
+            font-weight: 300;
+            line-height: 1.4;
+            text-align: justify;
+        }
+    }
+}
+
+.big-title {
+    font-size: 6em;
+    font-weight: 500;
+    padding: 30px 60px;
+    background-color: #48e;
+    border-radius: 60px;
+}
+  
+  .big-text {
+    margin-top: 40px;
+    font-size: 1.5em;
+}
+
+
+.section--bigger{
+    height: 130vh;
+}
+
+.no-border {
+    border-bottom: none;
+}
+  
+.column__ {
+    display: flex;
+    flex-direction: column;
+}
+  
+.section__content--bordered {
+    background-color: #baa08d;
+    border-radius: 15px;
+}
+
+.section__text-leftwise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.section__content--column {
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__text--centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text--larger {
+    width: 90%;
+}
+
+  
+.justified {
+    text-align: justify;
+}
+  
+.larger {
+    width: 60%;
+}
+  
+.margined {
+    margin-bottom: 40px;
+}

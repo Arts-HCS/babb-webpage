@@ -1,7 +1,7 @@
-@use "variables" as vars;
-@use "mixins" as mixs;
-@use "extends" as ext;
-@use "normalize";
+@use "../utilities/variables" as vars;
+@use "../utilities/mixins" as mixs;
+@use "../utilities/extends" as ext;
+@use "../utilities/normalize";
 
 .header{
     @extend %fluid-width;
@@ -13,6 +13,74 @@
     @extend %fluid-width;
     height: 60vh;
     @include mixs.flex-column__center;
+    .navbar{
+        @include mixs.position-absolute;
+        @extend %fluid-width;
+        height: 8em;
+        z-index: 2;
+        @include mixs.flex--space-between;
+        padding: 0 30px;
+        .navbar__content__left{
+            width: 200px;
+            @include mixs.flex--space-between;
+            gap: 30px;
+            @extend %fluid-height-per;
+            .navbar__image{
+                width: 80px;
+                height: 80px;
+            }
+            .navbar__title{
+                font-size: 3.5em;
+                color: vars.$secondary-color-white;
+                @extend %transitioned;
+                &:hover{
+                    color: vars.$principal-color-white;
+                    transform: scale(1.01);
+                }
+            }
+        }
+        .navlist{
+            flex-basis: 50%;
+            @extend %fluid-height-per;
+            @include mixs.flex--space-between;
+            li{
+                @extend %transitioned;
+                &:hover{
+                    transform: scale(1.05)
+                }
+                .list-item{
+                    padding: 15px 20px;
+                    background-color: vars.$headers-border;
+                    border-radius: 30px;
+                    color: #222;
+                    @extend %transitioned;
+                    &:hover{
+                        background-color: #3a3434;
+                        color: vars.$principal-color-white;
+                        font-size: 18.5px;
+                    }
+                }
+            }
+        }
+    }
+    .navbar__non-transparent{
+        background-color: #515049;
+    }
+    .navbar--fixed{
+        @include mixs.position-fixed;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    }    
+    .banner__title--dark{
+        margin-top: 140px;
+        color: #333;
+        font-size: 4.3em;
+        font-weight: 300;
+    }
+    .text{
+        @extend %text;
+        @extend %centered;
+        @extend %larger;
+    }
 }
 
 .overlay{
@@ -124,20 +192,4 @@
 
 .navbar--white__title{
     color: #eee;
-}
-
-.navbar__non-transparent{
-    background-color: #515049;
-}
-
-.navbar--fixed{
-    @include mixs.position-fixed;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
-}
-
-.banner__title--dark{
-    margin-top: 140px;
-    color: #333;
-    font-size: 4.3em;
-    font-weight: 300;
 }

@@ -320,8 +320,8 @@ body {
 }
 
 .header__content {
-  display: flex;
   width: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -344,7 +344,7 @@ body {
 .margined {
   margin-bottom: 40px;
 }
-
+/*---------------- */
 .cards {
   width: 100%;
   flex-basis: 80%;
@@ -449,7 +449,7 @@ body {
   align-items: center;
   gap: 10px;
 }
-
+/*-------*/
 .card__titles {
   display: flex;
   flex-direction: column;
@@ -539,7 +539,7 @@ body {
   right: 15px;
   font-size: 20px;
 }
-
+/*---------*/
 .container {
   width: 60%;
   margin: auto;
@@ -666,7 +666,7 @@ body {
 .courses__subtitle--color-green {
   color: #1f6435;
 }
-
+/*------------*/
 .principal-container {
   width: 1200px;
   margin: 2em auto;

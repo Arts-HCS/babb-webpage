@@ -1,9 +1,15 @@
-@use "variables" as vars;
-@use "mixins" as mixs;
-@use "extends";
-@use "normalize";
-@use "footer";
-@use "header";
+@use "./utilities/variables" as vars;
+@use "./utilities/mixins" as mixs;
+@use "./utilities/extends";
+@use "./utilities/normalize";
+@use "./layout/footer";
+@use "./layout/header";
+@use "./pages/about.scss";
+@use "./pages/contact.scss";
+@use "./pages/courses.scss";
+@use "./pages/method.scss";
+@use "./pages/index.scss";
+
 
 body{
     font-family: vars.$principal-font;

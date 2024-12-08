@@ -1,0 +1,43 @@
+%fluid-width{
+    width: 100%;
+}
+
+%fluid-height-vh{
+    height: 100vh;
+}
+
+%fluid-height-per{
+    height: 100%;
+}
+
+%transitioned{
+    transition: all 0.3s ease-in-out 0s;
+}
+
+%no-border{
+    border: none;
+}
+
+%text{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.7;
+    width: 80%;
+}
+
+%centered{
+    width: 600px;
+    text-align: center;
+}
+
+%larger{
+    width: 60%;
+}
+
+%little-text{
+    margin-top: 17px;
+    font-size: 16px;
+    text-align: justify;
+}

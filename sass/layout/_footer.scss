@@ -1,0 +1,49 @@
+@use "../utilities/variables" as vars;
+@use "../utilities/mixins" as mixs;
+@use "../utilities/extends" as ext;
+@use "../utilities/normalize";
+
+.footer{
+    @extend %fluid-width;
+    height: 50vh;
+    background-color: #666;
+    @include mixs.flex--space-center;
+    position: relative;
+    .footer__content{
+        width: 90%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        .footer__column{
+            padding: 20px;
+            .mini_title {
+                font-size: 1.2em;
+                color: #fff;
+            }
+            .footer__nav{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                @extend %fluid-height-per;
+                li{
+                    margin-top: 50px;
+                    .footer__item{
+                        font-size: 20px;
+                        color: #ddd;
+                        @extend %transitioned;
+                        &:hover{
+                            color: #0abf10;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        color: #fff;
+        position: absolute;
+        bottom: 5px;
+        right: 15px;
+        font-size: 20px;
+    }
+}

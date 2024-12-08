@@ -1,0 +1,185 @@
+@use "../utilities/variables" as vars;
+@use "../utilities/mixins" as mixs;
+@use "../utilities/extends" as ext;
+@use "../utilities/normalize";
+
+.main--larger {
+    width: 90%;
+    height: 250vh;
+    background-color: vars.$headers-border;
+    border: 1px solid #444;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    @include mixs.flex-column__center;
+    .section {
+        margin-top: 20px;
+        @extend %fluid-width;
+        height: 65vh;
+        @include mixs.flex--space-center;
+    }
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    border: 1px solid #444;
+    border-radius: 15px;
+    box-shadow: 8px 12px 0 rgb(0, 0, 0, 0.2);
+    @extend %transitioned;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 1fr;
+    grid-template-areas:
+    "header header"
+    "left-content right-content";
+    &:hover{
+        box-shadow: 8px 12px 0 rgba(0,0,0,0.3);
+        transform: scale(1.03);
+    }
+    .courses__header{
+        grid-area: header;
+        padding: 30px;
+        background-color: #f1c274;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .courses__title{
+            color: #333;
+            font-size: 35px;
+            font-weight: 400;
+        }
+        .courses__subtitle{
+            color: #a82734;
+            font-size: 25px;
+            font-weight: 300;
+        }
+        .courses__text{
+            color: #444;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        .courses__title--color-white {
+            color: #eee;
+        }
+        .courses__subtitle--color-black {
+            color: #333;
+        }
+        .courses__subtitle--color-black-darker {
+            color: #111;
+        }
+        .courses__title--color-blue {
+            color: #6c8ddc;
+        }
+        .courses__subtitle--color-green {
+            color: #1f6435;
+        }
+    }
+    .left-content{
+        grid-area: left-content;
+        background-color: #a3464f;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .little-title{
+            color: #eee;
+            font-weight: 400;
+            font-size: 1.9em;
+        }
+        p{
+            .info{
+                font-size: 25px;
+                color: #f1c274;
+            }
+            .big-number{
+                font-size: 2.6em;
+                color: #ecececec;
+            }
+            .courses__title--color-white {
+                color: #eee;
+            }
+            .courses__subtitle--color-black {
+                color: #333;
+            }
+            .courses__subtitle--color-black-darker {
+                color: #111;
+            }
+            .courses__title--color-blue {
+                color: #6c8ddc;
+            }
+            .courses__subtitle--color-green {
+                color: #1f6435;
+            }
+        }
+        .smaller-text{
+            margin-top: 10px;
+            font-size: 17px;
+            color: hsl(0,0%, 97%);
+        }
+        .courses__title--color-white {
+            color: #eee;
+        }
+        .courses__subtitle--color-black {
+            color: #333;
+        }
+        .courses__subtitle--color-black-darker {
+            color: #111;
+        }
+        .courses__title--color-blue {
+            color: #6c8ddc;
+        }
+        .courses__subtitle--color-green {
+            color: #1f6435;
+        }
+    }
+    .right-content{
+        background-color: hsl(0,0%, 20%);
+        padding: 30px;
+        .little-title{
+            color: #eee;
+            font-weight: 400;
+            font-size: 1.9em;
+        }
+        .list{
+            margin-top: 20px;
+            line-height: 1.5;
+            font-weight: 300;
+            color: hsl(0,0%,79%);
+            font-size: 18px;
+        }
+        .courses__title--color-white {
+            color: #eee;
+        }
+        .courses__subtitle--color-black {
+            color: #333;
+        }
+        .courses__subtitle--color-black-darker {
+            color: #111;
+        }
+        .courses__title--color-blue {
+            color: #6c8ddc;
+        }
+        .courses__subtitle--color-green {
+            color: #1f6435;
+        }
+    }
+    .courses__header--backcolor-blue {
+        background-color: #6c8ddc;
+    }
+    .courses__header--backcolor-white {
+        background-color: #eee;
+    }
+    .courses__subtitle--backcolor-red {
+        background-color: #8e4151;
+    }
+    .courses__header--backcolor-green {
+        background-color: #359e56;
+    }
+}
+
+.double-spacing {
+    margin-bottom: 80px;
+}
