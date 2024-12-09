@@ -70,4 +70,132 @@
   transform: scale(1.04);
 }
 
+@media screen and (max-width: 860px) {
+  .formulario {
+    width: 650px;
+    padding: 2em;
+  }
+  .formulario .form__title {
+    margin-bottom: 1.6rem;
+    font-size: 1.4rem;
+  }
+  .formulario .label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .formulario input, .formulario select, .formulario textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .formulario textarea {
+    height: 140px;
+  }
+  .formulario .btn-submit {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 740px) {
+  .formulario {
+    width: 500px;
+    padding: 1.7em;
+  }
+  .formulario .form__title {
+    margin-bottom: 1.3rem;
+    font-size: 1.4rem;
+  }
+  .formulario .label {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .formulario input, .formulario select, .formulario textarea {
+    padding: 0.7rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.8rem;
+  }
+  .formulario textarea {
+    height: 100px;
+  }
+  .formulario .btn-submit {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .formulario {
+    width: 350px;
+    padding: 1.5em;
+  }
+  .formulario .form__title {
+    margin-bottom: 1.3rem;
+    font-size: 1.2rem;
+  }
+  .formulario .label {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+  .formulario input, .formulario select, .formulario textarea {
+    padding: 0.6rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.7rem;
+  }
+  .formulario textarea {
+    height: 90px;
+  }
+  .formulario .btn-submit {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .formulario {
+    width: 245px;
+    padding: 1.5em;
+  }
+  .formulario .form__title {
+    margin-bottom: 1.1rem;
+    font-size: 1rem;
+  }
+  .formulario .label {
+    font-size: 0.7rem;
+    margin-bottom: 0.4rem;
+  }
+  .formulario input, .formulario select, .formulario textarea {
+    padding: 0.5rem;
+    font-size: 0.6rem;
+  }
+  .formulario textarea {
+    height: 60px;
+  }
+  .formulario .btn-submit {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 250px) {
+  .formulario {
+    width: 170px;
+    padding: 1.5em;
+  }
+  .formulario .form__title {
+    margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+  }
+  .formulario .label {
+    font-size: 0.6rem;
+    margin-bottom: 0.4rem;
+  }
+  .formulario input, .formulario select, .formulario textarea {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+  }
+  .formulario textarea {
+    height: 60px;
+  }
+  .formulario .btn-submit {
+    padding: 10px 15px;
+    font-size: 0.5rem;
+  }
+}
+
 /*# sourceMappingURL=contact.css.map */

@@ -14,12 +14,26 @@
     height: 200vh;
     margin: 0 auto;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .section{
         .text--larger{
             width: 90%;
         }
     }
 }
+
+.section--bigger{
+    height: 130vh;
+}
+
+.section__content--column {
+    flex-direction: column;
+    align-items: center;
+}
+
 .section__title {
     font-size: 2em;
     font-weight: 400;
@@ -116,5 +130,303 @@
         grid-row: 2/3;
         color: #fff;
         background-color: hsl(219, 29%, 14%);
+    }
+}
+
+
+@media screen and (max-width: vars.$breakpoint-lg){
+    .main--shorter {
+        width: 90%;
+        height: 270vh;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        .section{
+            flex-direction: row;
+            .text--larger{
+                width: 90%;
+                font-size: 15px;
+            }
+        }
+    }
+    .section{
+        .section__content{
+            justify-content: center;
+            align-items: center;
+            .section__title {
+                width: 400px;
+                font-size: 2em;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+        .principal-container{
+            width: 900px;
+            margin: 2em auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            .little-container{
+                display: flex;
+                flex-direction: column;
+                padding: 20px 25px;
+                border-radius: 10px;
+                width: 300px;
+                height: 400px;
+                .quote-img{
+                    width: 50px;
+                    height: 50px;
+                    top: 65px;
+                    right: 130px;
+                }
+                .container__header {
+                    gap: 15px;
+                    margin-bottom: 20px;
+                    .profile-img{
+                        border-radius: 50%;
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                .container__body{
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                    line-height: 1.4;
+                }
+                .header__content__team{
+                    gap: 10px;
+                    p{
+                        font-size: 12px;
+                    }
+                }
+                .container__foter{
+                    opacity: 70%;
+                    font-size: 13px;
+                    line-height: 1.4;
+                }
+            }
+            .purple {
+                color: #eee;
+                background-color: hsl(263, 55%, 52%);
+            }
+            .gray {
+                background-color: hsl(217, 19%, 35%);
+            }
+            .white-large {
+                color: #222;
+                .header__content__team p{
+                    color: #999;
+                }
+            }
+            .white {
+                color: #222;
+                .header__content__team p{
+                    color: #999;
+                }
+            }
+            .dark-blue {
+                background-color: hsl(219, 29%, 14%);
+            }
+        }
+    }
+    .section--bigger{
+        height: 210vh;
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-md){
+    .section{
+        .section__content{
+            justify-content: center;
+            align-items: center;
+            .section__title {
+                width: 400px;
+                font-size: 2em;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+        .principal-container{
+            width: 800px;
+            gap: 25px;
+            margin: auto;
+            .little-container{
+                display: flex;
+                flex-direction: column;
+                padding: 20px 25px;
+                border-radius: 10px;
+                width: 350px;
+                height: 300px;
+                .quote-img{
+                    width: 40px;
+                    height: 40px;
+                    top: 65px;
+                    right: 130px;
+                }
+                .container__header {
+                    gap: 15px;
+                    margin-bottom: 20px;
+                    .profile-img{
+                        border-radius: 50%;
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+                .container__body{
+                    font-size: 13px;
+                    margin-bottom: 20px;
+                    line-height: 1.4;
+                }
+                .header__content__team{
+                    gap: 10px;
+                    p{
+                        font-size: 11.5px;
+                    }
+                }
+                .container__foter{
+                    opacity: 70%;
+                    font-size: 12px;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+    .section--bigger{
+        height: 210vh;
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-mmd){
+    .main--shorter {
+        height: 300vh;
+    }
+    .section{
+        .section__content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            .section__title {
+                font-size: 1.8em;
+            }
+        }
+        .principal-container{
+            width: 400px;
+            gap: 25px;
+            margin: none;
+            .little-container{
+                display: flex;
+                flex-direction: column;
+                padding: 20px 25px;
+                border-radius: 10px;
+                width: 350px;
+                height: 300px;
+                .quote-img{
+                    width: 40px;
+                    height: 40px;
+                    top: 65px;
+                    right: 130px;
+                }
+                .container__header {
+                    gap: 15px;
+                    margin-bottom: 20px;
+                    .profile-img{
+                        border-radius: 50%;
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+                .container__body{
+                    font-size: 13px;
+                    margin-bottom: 20px;
+                    line-height: 1.4;
+                }
+                .header__content__team{
+                    gap: 10px;
+                    p{
+                        font-size: 11.5px;
+                    }
+                }
+                .container__foter{
+                    opacity: 70%;
+                    font-size: 12px;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+    .section--bigger{
+        height: 250vh;
+        justify-content: center;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-xxs){
+    .main--shorter {
+        height: 300vh;
+    }
+    .section{
+        padding: 0;
+        .section__content{
+            padding: 0;
+            .section__title {
+                font-size: 1.5em;
+            }
+            .text{
+                font-size: 14px;
+                width: 70%;
+            }
+        }
+        .principal-container{
+            width: 250px;
+            gap: 25px;
+            .little-container{
+                display: flex;
+                flex-direction: column;
+                padding: 20px 25px;
+                border-radius: 10px;
+                width: 220px;
+                height: 250px;
+                overflow-y: scroll;
+                .quote-img{
+                    width: 35px;
+                    height: 35px;
+                    top: 65px;
+                    right: 130px;
+                }
+                .container__header {
+                    gap: 15px;
+                    margin-bottom: 20px;
+                    .profile-img{
+                        border-radius: 50%;
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+                .container__body{
+                    font-size: 12px;
+                    margin-bottom: 14px;
+                    line-height: 1.4;
+                }
+                .header__content__team{
+                    gap: 10px;
+                    p{
+                        font-size: 11.5px;
+                    }
+                }
+                .container__foter{
+                    opacity: 70%;
+                    font-size: 12px;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+    .section--bigger{
+        width: 250px;
+        justify-content: center;
+        align-self: center;
     }
 }

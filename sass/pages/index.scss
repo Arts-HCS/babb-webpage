@@ -190,15 +190,11 @@
     border-radius: 60px;
 }
   
-  .big-text {
+.big-text {
     margin-top: 40px;
     font-size: 1.5em;
 }
 
-
-.section--bigger{
-    height: 130vh;
-}
 
 .no-border {
     border-bottom: none;
@@ -232,5 +228,1013 @@
     align-items: center;
 }
 
+@media screen and (max-width: vars.$breakpoint-lg){
+    .section--larger{
+        height: 83vh;
+        margin-top: 10px;
+        .section__content--column {
+            .cards {
+                .card {
+                    width: 250px;
+                    height: 330px;
+                    padding: 20px 10px;
+    
+                    .rounded-image {
+                        width: 170px;
+                        height: 110px;
+                        border-radius: 20px;
+                        object-fit: cover;
+                        border: 1px solid #333;
+                    }
+    
+                    .mini-titulo {
+                        margin-top: 20px;
+                        font-size: 20px;
+                    }
+                    .text{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+    .teacher-cards{
+        flex-basis: 75%;
+        gap: 35px;
+        padding: 30px 5px;
+        .card--large{
+            width: 550px;
+            height: 260px;
+            padding: 27px;
+            .card__header{
+                gap: 12px;
+                .figure--little{
+                    width: 70px;
+                    height: 70px;
+                }
+                .card__titles{
+                    gap: 10px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    .card_title_light {
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .teacher-text{
+                font-size: 15.2px;
+            }
+        }
+    }
+    .section{
+            .column__{
+                .big-title {
+                    font-size: 4em;
+                    font-weight: 500;
+                    padding: 30px 60px;
+                    background-color: #48e;
+                    border-radius: 60px;
+                }
+                
+                .big-text {
+                    margin-top: 38px;
+                    font-size: 1.2em;
+                    text-align: center;
+                }
+            }
+    }
+}
 
 
+
+@media screen and (max-width: vars.$breakpoint-md){
+    .section {
+        margin-top: 20px;
+        height: 60vh;
+    }
+    .section__content {
+        width: 90%;
+        height: 90%;
+        .section__text {
+            flex-basis: 50%;
+            padding: 15px;
+            .section__title {
+                font-size: 1.8em;
+                font-weight: 400;
+            }
+            .text {
+                margin-top: 20px;
+                font-size: 16px;
+                line-height: 1.6;
+                width: 90%;
+            }
+        }
+        .figure {
+            width: 450px;
+            height: 300px;
+        }
+        .teacher-cards{
+            flex-basis: 70%;
+            gap: 35px;
+            padding: 25px 5px;
+            .card--large{
+                width: 450px;
+                height: 250px;
+                padding: 27px;
+                .card__header{
+                    gap: 10px;
+                    .figure--little{
+                        width: 65px;
+                        height: 65px;
+                    }
+                    .card__titles{
+                        gap: 7px;
+                        font-weight: 500;
+                        font-size: 17px;
+                        .card_title_light {
+                            font-size: 15.5px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .teacher-text{
+                    font-size: 14.8px;
+                }
+            }
+        }
+        .section__text {
+            .section__title {
+                font-size: 1.5em;
+                font-weight: 400;
+            }
+            .text {
+                margin-top: 0px;
+                font-size: 16px;
+                line-height: 1.6;
+                width: 80%;
+            }
+        }
+    }
+    .section--larger {
+        height: 100vh;
+        margin-top: 10px;
+        .section__content--column {
+            .header__content {
+                flex-basis: 10%;
+                justify-content: flex-start;
+                .section__title {
+                    font-size: 1.5em;
+                    font-weight: 400;
+                }
+                .text {
+                    margin-top: 0px;
+                    font-size: 16px;
+                }
+            }
+            .cards {
+                flex-basis: 80%;
+                flex-wrap: wrap;
+                .card {
+                    width: 200px;
+                    height: 300px;
+                    padding: 10px 8px;
+
+                    .rounded-image {
+                        width: 100px;
+                        height: 120px;
+                    }
+    
+                    .mini-titulo {
+                        margin-top: 15px;
+                        font-size: 18px;
+                    }
+                    .text{
+                        margin-top: 20px;
+                        font-size: 14px;
+                        line-height: 1.4;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .section{
+        .column__{
+            .big-title {
+                font-size: 3.8em;
+                font-weight: 500;
+                padding: 28px 55px;
+                background-color: #48e;
+                border-radius: 60px;
+            }
+            
+            .big-text {
+                margin-top: 37px;
+                font-size: 1.1em;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-mmd){
+    .section {
+        margin-top: 20px;
+        height: 60vh;
+    }
+    .section__content {
+        height: 600px;
+        .section__text {
+            .section__title {
+                font-size: 1.6em;
+                font-weight: 400;
+            }
+            .text {
+                margin-top: 22px;
+                font-size: 15px;
+                line-height: 1.6;
+                width: 90%;
+            }
+        }
+        .figure {
+            width: 450px;
+            height: 300px;
+        }
+        .teacher-cards{
+            flex-basis: 70%;
+            gap: 30px;
+            padding: 20px 8px;
+            .card--large{
+                width: 420px;
+                height: 220px;
+                padding: 27px;
+                .card__header{
+                    gap: 10px;
+                    .figure--little{
+                        width: 60px;
+                        height: 60px;
+                    }
+                    .card__titles{
+                        gap: 6px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        .card_title_light {
+                            font-size: 15px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .teacher-text{
+                    font-size: 13.7px;
+                }
+            }
+        }
+        .section__text--centered {
+            .section__title {
+                font-size: 1.5em;
+                font-weight: 400;
+            }
+            .text {
+                margin-top: 0px;
+                font-size: 16px;
+                line-height: 1.6;
+                width: 80%;
+            }
+        }
+    }
+    .section--larger {
+        height: 120vh;
+        margin-top: 40px;
+        .section__content--column {
+            height: 85%;
+            .header__content {
+                flex-basis: 10%;
+                .section__title {
+                    font-size: 1.4em;
+                    font-weight: 400;
+                }
+                .text {
+                    margin-top: 0px;
+                    font-size: 16px;
+                }
+            }
+            .cards {
+                flex-basis: 100%;
+                margin-top: 10px;
+                flex-basis: 80%;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+
+                .card {
+                    width: 270px;
+                    height: 240px;
+                    padding: 10px 8px;
+
+                    .rounded-image {
+                        width: 120px;
+                        height: 90px;
+                    }
+    
+                    .mini-titulo {
+                        margin-top: 13px;
+                        font-size: 16px;
+                    }
+                    .text{
+                        margin-top: 18px;
+                        font-size: 13.5px;
+                        line-height: 1.4;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .section{
+        .column__{
+            .big-title {
+                font-size: 3.6em;
+                font-weight: 500;
+                padding: 24px 52px;
+                background-color: #48e;
+                border-radius: 60px;
+            }
+            
+            .big-text {
+                margin-top: 35px;
+                font-size: 1.2em;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-sm){
+    .section__content {
+        height: 600px;
+        .section__text {
+            .section__title {
+                font-size: 1.4em;
+                font-weight: 400;
+            }
+            .text {
+                margin-top: 20px;
+                font-size: 14px;
+                line-height: 1.6;
+                width: 93%;
+            }
+        }
+        .figure {
+            width: 400px;
+            height: 250px;
+        }
+        .teacher-cards{
+            flex-basis: 75%;
+            gap: 24px;
+            padding: 20px 10px;
+            .card--large{
+                width: 340px;
+                height: 210px;
+                padding: 23px;
+                .card__header{
+                    gap: 10px;
+                    .figure--little{
+                        width: 55px;
+                        height: 55px;
+                    }
+                    .card__titles{
+                        gap: 5.5px;
+                        font-weight: 500;
+                        font-size: 15px;
+                        .card_title_light {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .teacher-text{
+                    font-size: 12px;
+                }
+            }
+        }
+        .section__text--centered {
+            .section__title {
+                font-size: 1.2em;
+            }
+            .text {
+                font-size: 14px;
+                line-height: 1.5;
+                width: 85%;
+            }
+        }
+    }
+    .section--larger {
+        height: 120vh;
+        margin-top: 40px;
+        .section__content--column {
+            height: 85%;
+            .header__content {
+                flex-basis: 10%;
+                .section__title {
+                    font-size: 1.3em;
+                    font-weight: 400;
+                }
+                .text {
+                    font-size: 14px;
+                }
+            }
+            .cards {
+                margin-top: 10px;
+                gap: 15px;
+
+                .card {
+                    width: 300px;
+                    height: 240px;
+                    padding: 10px 8px;
+
+                    .rounded-image {
+                        width: 120px;
+                        height: 90px;
+                    }
+    
+                    .mini-titulo {
+                        margin-top: 13px;
+                        font-size: 16px;
+                    }
+                    .text{
+                        margin-top: 18px;
+                        font-size: 13.5px;
+                        line-height: 1.4;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .section{
+        .column__{
+            .big-title {
+                font-size: 3.4em;
+                font-weight: 500;
+                padding: 22px 50px;
+                background-color: #48e;
+                border-radius: 60px;
+            }
+            
+            .big-text {
+                margin-top: 33px;
+                font-size: 1.1em;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-xs){
+    .section__content {
+        border: none;
+        height: 500px;
+        .section__text {
+            .section__title {
+                font-size: 1.3em;
+                font-weight: 400;
+            }
+            .text {
+                margin-top: 16px;
+                font-size: 13px;
+                line-height: 1.6;
+                width: 95%;
+            }
+        }
+        .figure {
+            width: 320px;
+            height: 200px;
+        }
+    }
+    .section__content--bordered{
+        flex-direction: column;
+        width: 339px;
+        height: 500px;
+        overflow: hidden;
+        .teacher-cards{
+            border: none;
+            border-bottom-left-radius: 0;
+            gap: 20px;
+            padding: 20px 13px;
+            .card--large{
+                width: 100%;
+                height: 210px;
+                padding: 23px;
+                .card__header{
+                    gap: 10px;
+                    .figure--little{
+                        width: 55px;
+                        height: 55px;
+                    }
+                    .card__titles{
+                        gap: 5.5px;
+                        font-weight: 500;
+                        font-size: 14.5px;
+                        .card_title_light {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .teacher-text{
+                    font-size: 12px;
+                }
+            }
+        }
+        .section__text--centered {
+            justify-content: center;
+            .section__title {
+                font-size: 1.2em;
+            }
+            .text {
+                font-size: 14px;
+                line-height: 1.5;
+                width: 85%;
+                margin-top: 0;
+            }
+        }
+    }
+    .section--larger {
+        height: 130vh;
+        margin-top: 50px;
+        .section__content--column {
+            height: 85%;
+            .header__content {
+                flex-basis: 10%;
+                .section__title {
+                    font-size: 1.3em;
+                    margin-top: 70px;
+                    font-weight: 400;
+                }
+                .text {
+                    width: 90%;
+                    font-size: 13px;
+                }
+            }
+            .cards {
+                margin-top: 10px;
+                gap: 15px;
+
+                .card {
+                    width: 300px;
+                    height: 240px;
+                    padding: 10px 8px;
+
+                    .rounded-image {
+                        width: 120px;
+                        height: 90px;
+                    }
+    
+                    .mini-titulo {
+                        margin-top: 13px;
+                        font-size: 16px;
+                    }
+                    .text{
+                        margin-top: 18px;
+                        font-size: 13.5px;
+                        line-height: 1.4;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .section{
+        .column__{
+            .big-title {
+                font-size: 3.4em;
+                font-weight: 500;
+                padding: 22px 50px;
+                background-color: #48e;
+                border-radius: 60px;
+            }
+            
+            .big-text {
+                margin-top: 33px;
+                font-size: 1.1em;
+                text-align: center;
+            }
+        }
+    }
+}
+    
+
+
+
+
+@media screen and (max-width: vars.$breakpoint-sm){
+    .section__content {
+        height: 600px;
+        .section__text {
+            .section__title {
+                font-size: 1.4em;
+                font-weight: 400;
+            }
+            .text {
+                margin-top: 20px;
+                font-size: 14px;
+                line-height: 1.6;
+                width: 93%;
+            }
+        }
+        .figure {
+            width: 400px;
+            height: 250px;
+        }
+        .teacher-cards{
+            flex-basis: 75%;
+            gap: 24px;
+            padding: 20px 10px;
+            .card--large{
+                width: 340px;
+                height: 210px;
+                padding: 23px;
+                .card__header{
+                    gap: 10px;
+                    .figure--little{
+                        width: 55px;
+                        height: 55px;
+                    }
+                    .card__titles{
+                        gap: 5.5px;
+                        font-weight: 500;
+                        font-size: 15px;
+                        .card_title_light {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .teacher-text{
+                    font-size: 12px;
+                }
+            }
+        }
+        .section__text--centered {
+            .section__title {
+                font-size: 1.2em;
+            }
+            .text {
+                font-size: 14px;
+                line-height: 1.5;
+                width: 85%;
+            }
+        }
+    }
+    .section--larger {
+        height: 120vh;
+        margin-top: 40px;
+        .section__content--column {
+            height: 85%;
+            .header__content {
+                flex-basis: 10%;
+                .section__title {
+                    font-size: 1.3em;
+                    font-weight: 400;
+                }
+                .text {
+                    font-size: 14px;
+                }
+            }
+            .cards {
+                margin-top: 10px;
+                gap: 15px;
+
+                .card {
+                    width: 300px;
+                    height: 240px;
+                    padding: 10px 8px;
+
+                    .rounded-image {
+                        width: 120px;
+                        height: 90px;
+                    }
+    
+                    .mini-titulo {
+                        margin-top: 13px;
+                        font-size: 16px;
+                    }
+                    .text{
+                        margin-top: 18px;
+                        font-size: 13.5px;
+                        line-height: 1.4;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .section{
+        .column__{
+            .big-title {
+                font-size: 3.4em;
+                font-weight: 500;
+                padding: 22px 50px;
+                background-color: #48e;
+                border-radius: 60px;
+            }
+            
+            .big-text {
+                margin-top: 33px;
+                font-size: 1.1em;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-xs){
+    .section__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        height: 350px;
+        .section__text {
+            .section__title {
+                font-size: 1.2em;
+            }
+            .text {
+                margin-top: 16px;
+                font-size: 13px;
+                line-height: 1.4;
+                width: 95%;
+            }
+        }
+        .figure {
+            width: 320px;
+            height: 200px;
+        }
+    }
+    .section__content--bordered{
+        flex-direction: column;
+        width: 339px;
+        height: 500px;
+        overflow: hidden;
+        .teacher-cards{
+            border: none;
+            border-bottom-left-radius: 0;
+            gap: 20px;
+            padding: 20px 13px;
+            .card--large{
+                width: 100%;
+                height: 210px;
+                padding: 23px;
+                .card__header{
+                    gap: 10px;
+                    .figure--little{
+                        width: 55px;
+                        height: 55px;
+                    }
+                    .card__titles{
+                        gap: 5.5px;
+                        font-weight: 500;
+                        font-size: 14.5px;
+                        .card_title_light {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .teacher-text{
+                    font-size: 12px;
+                }
+            }
+        }
+        .section__text--centered {
+            justify-content: center;
+            .section__title {
+                font-size: 1.2em;
+            }
+            .text {
+                font-size: 14px;
+                line-height: 1.5;
+                width: 85%;
+                margin-top: 0;
+            }
+        }
+    }
+    .section--larger {
+        height: 130vh;
+        margin-top: 50px;
+        .section__content--column {
+            margin-top: 40px;
+            height: 85%;
+            .header__content {
+                flex-basis: 10%;
+                .section__title {
+                    font-size: 1.3em;
+                    margin-top: 70px;
+                    font-weight: 400;
+                }
+                .text {
+                    width: 90%;
+                    font-size: 13px;
+                }
+            }
+            .cards {
+                margin-top: 10px;
+                gap: 15px;
+
+                .card {
+                    width: 300px;
+                    height: 240px;
+                    padding: 10px 8px;
+
+                    .rounded-image {
+                        width: 120px;
+                        height: 90px;
+                    }
+    
+                    .mini-titulo {
+                        margin-top: 13px;
+                        font-size: 16px;
+                    }
+                    .text{
+                        margin-top: 18px;
+                        font-size: 13.5px;
+                        line-height: 1.4;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .section{
+        .column__{
+            .big-title {
+                font-size: 2.8em;
+                font-weight: 500;
+                padding: 20px 45px;
+                background-color: #48e;
+                border-radius: 60px;
+            }
+            
+            .big-text {
+                margin-top: 33px;
+                font-size: 0.9em;
+                text-align: center;
+            }
+        }
+    }
+}
+    
+@media screen and (max-width: vars.$breakpoint-xxxs){
+    .section__content {
+        .section__text {
+            .section__title {
+                font-size: 1.2em;
+            }
+            .text {
+                margin-top: 16px;
+                font-size: 12px;
+                line-height: 1.4;
+                width: 95%;
+            }
+        }
+        .figure {
+            width: 205px;
+            height: 180px;
+            margin-bottom: 30px;
+        }
+    }
+    .section__content--bordered{
+        width: 240px;
+        height: 450px;
+        overflow: hidden;
+        .teacher-cards{
+            gap: 20px;
+            padding: 20px 13px;
+            .card--large{
+                width: 100%;
+                height: 210px;
+                padding: 12px;
+                .card__header{
+                    gap: 6px;
+                    .figure--little{
+                        width: 50px;
+                        height: 50px;
+                    }
+                    .card__titles{
+                        gap: 5.5px;
+                        font-weight: 500;
+                        font-size: 13.5px;
+                        .card_title_light {
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .teacher-text{
+                    font-size: 11px;
+                }
+            }
+        }
+        .section__text--centered {
+            justify-content: center;
+            .section__title {
+                font-size: 1em;
+            }
+            .text {
+                font-size: 12.5px;
+                line-height: 1.5;
+                width: 85%;
+                margin-top: 0;
+            }
+        }
+    }
+    .section--larger {
+        height: 130vh;
+
+        .section__content--column {
+            margin-top: 40px;
+            height: 85%;
+            .header__content {
+                flex-basis: 10%;
+                .section__title {
+                    font-size: 1.2em;
+                    margin-top: 70px;
+                    font-weight: 400;
+                }
+                .text {
+                    width: 80%;
+                    font-size: 12px;
+                }
+            }
+            .cards {
+                margin-top: 10px;
+                gap: 15px;
+
+                .card {
+                    width: 150px;
+                    height: 250px;
+                    padding: 10px 3px;
+
+                    .rounded-image {
+                        width: 100px;
+                        height: 80px;
+                    }
+    
+                    .mini-titulo {
+                        margin-top: 13px;
+                        font-size: 15px;
+                    }
+                    .text{
+                        margin-top: 15px;
+                        font-size: 12px;
+                        line-height: 1.4;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .section{
+        .column__{
+            .big-title {
+                font-size: 2em;
+                font-weight: 500;
+                padding: 15px 15px;
+                background-color: #48e;
+                border-radius: 60px;
+                text-align: center;
+            }
+            
+            .big-text {
+                margin-top: 33px;
+                font-size: 0.9em;
+                text-align: center;
+            }
+        }
+    }
+}
+    
+
+
+@media screen and (max-width: vars.$breakpoint-Xs){
+    .section__content {
+        .section__text {
+            .section__title {
+                font-size: 1em;
+            }
+            .text {
+                margin-top: 16px;
+                font-size: 11px;
+                line-height: 1.4;
+                width: 95%;
+            }
+        }
+        .figure {
+            width: 0;
+            height: 0;
+        }
+    }
+}
+    

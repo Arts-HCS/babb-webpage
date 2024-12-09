@@ -61,3 +61,137 @@
         }
     }
 }
+
+@media screen and (max-width: vars.$breakpoint-sm){
+    .formulario{
+        width: 650px;
+        padding: 2em;
+        .form__title{
+            margin-bottom: 1.6rem;
+            font-size: 1.4rem;
+        }
+        .label{
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        input, select, textarea{
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        textarea {
+            height: 140px;
+        };
+        .btn-submit{
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-xs){
+    .formulario{
+        width: 500px;
+        padding: 1.7em;
+        .form__title{
+            margin-bottom: 1.3rem;
+            font-size: 1.4rem;
+        }
+        .label{
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        input, select, textarea{
+            padding: 0.7rem;
+            margin-bottom: 0.7rem;
+            font-size: 0.8rem;
+        }
+        textarea {
+            height: 100px;
+        };
+        .btn-submit{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: vars.$breakpoint-xxs){
+    .formulario{
+        width: 350px;
+        padding: 1.5em;
+        .form__title{
+            margin-bottom: 1.3rem;
+            font-size: 1.2rem;
+        }
+        .label{
+            font-size: 0.8rem;
+            margin-bottom: 0.4rem;
+        }
+        input, select, textarea{
+            padding: 0.6rem;
+            margin-bottom: 0.7rem;
+            font-size: 0.7rem;
+        }
+        textarea {
+            height: 90px;
+        };
+        .btn-submit{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-xxxs){
+    .formulario{
+        width: 245px;
+        padding: 1.5em;
+        .form__title{
+            margin-bottom: 1.1rem;
+            font-size: 1rem;
+        }
+        .label{
+            font-size: 0.7rem;
+            margin-bottom: 0.4rem;
+        }
+        input, select, textarea{
+            padding: 0.5rem;
+            font-size: 0.6rem;
+        }
+        textarea {
+            height: 60px;
+        };
+        .btn-submit{
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-Xs){
+    .formulario{
+        width: 170px;
+        padding: 1.5em;
+        .form__title{
+            margin-bottom: 0.7rem;
+            font-size: 0.9rem;
+        }
+        .label{
+            font-size: 0.6rem;
+            margin-bottom: 0.4rem;
+        }
+        input, select, textarea{
+            padding: 0.5rem;
+            font-size: 0.5rem;
+        }
+        textarea {
+            height: 60px;
+        };
+        .btn-submit{
+            padding: 10px 15px;
+            font-size: 0.5rem;
+        }
+    }
+}

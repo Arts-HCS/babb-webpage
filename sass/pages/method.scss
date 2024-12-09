@@ -2,3 +2,7 @@
 @use "../utilities/mixins" as mixs;
 @use "../utilities/extends" as ext;
 @use "../utilities/normalize";
+
+@media screen and (max-width: vars.$breakpoint-sm){
+    
+}
