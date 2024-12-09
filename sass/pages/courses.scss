@@ -183,3 +183,533 @@
 .double-spacing {
     margin-bottom: 80px;
 }
+
+@media screen and (max-width: vars.$breakpoint-lg){
+    .main--larger {
+        width: 90%;
+        height: 260vh;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        .section {
+            height: 60vh;
+        }
+    }
+    .container{
+        width: 60%;
+        margin: auto;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 220px 1fr;
+        grid-template-areas:
+        "header header"
+        "left-content right-content";
+        .courses__header{
+            grid-area: header;
+            padding: 30px;
+            gap: 25px;
+            .courses__title{
+                font-size: 35px;
+            }
+            .courses__subtitle{
+                font-size: 25px;
+            }
+            .courses__text{
+                margin-bottom: 10px;
+            }
+        }
+        .left-content{
+            grid-area: left-content;
+            padding: 30px;
+            gap: 24px;
+            .little-title{
+                font-size: 1.9em;
+            }
+            p{
+                .info{
+                    font-size: 25px;
+                }
+                .big-number{
+                    font-size: 2.6em;
+                }
+            }
+            .smaller-text{
+                margin-top: 10px;
+                font-size: 17px;
+            }
+        }
+        .right-content{
+            padding: 30px;
+            .little-title{
+                font-size: 1.9em;
+            }
+            .list{
+                margin-top: 20px;
+                line-height: 1.5;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-lg){
+    .main--larger {
+        width: 90%;
+        height: 260vh;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        .section {
+            height: 60vh;
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-md){
+    .main--larger {
+        width: 80%;
+        height: 220vh;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        .section {
+            height: 60vh;
+        }
+    }
+    .container{
+        width: 60%;
+        margin: auto;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 190px 200px;
+        grid-template-areas:
+        "header header"
+        "left-content right-content";
+        .courses__header{
+            grid-area: header;
+            padding: 25px;
+            gap: 14px;
+            .courses__title{
+                font-size: 23px;
+            }
+            .courses__subtitle{
+                font-size: 18px;
+            }
+            .courses__text{
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+        }
+        .left-content{
+            grid-area: left-content;
+            padding: 22px;
+            gap: 10px;
+            .little-title{
+                font-size: 1.5em;
+            }
+            p{
+                .info{
+                    font-size: 20px;
+                }
+                .big-number{
+                    font-size: 2.1em;
+                }
+            }
+            .smaller-text{
+                margin-top: 6px;
+                font-size: 14px;
+            }
+        }
+        .right-content{
+            padding: 25px;
+            .little-title{
+                font-size: 1.5em;
+            }
+            .list{
+                margin-top: 10px;
+                line-height: 1.3;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: vars.$breakpoint-mmd){
+    .main--larger {
+        width: 75%;
+        height: 200vh;
+        justify-content: space-around;
+        .section {
+            height: 60vh;
+        }
+    }
+    .container{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 190px 200px;
+        grid-template-areas:
+        "header header"
+        "left-content right-content";
+        .courses__header{
+            grid-area: header;
+            padding: 25px;
+            gap: 14px;
+            .courses__title{
+                font-size: 23px;
+            }
+            .courses__subtitle{
+                font-size: 18px;
+            }
+            .courses__text{
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+        }
+        .left-content{
+            grid-area: left-content;
+            padding: 22px;
+            gap: 10px;
+            .little-title{
+                font-size: 1.5em;
+            }
+            p{
+                .info{
+                    font-size: 20px;
+                }
+                .big-number{
+                    font-size: 2.1em;
+                }
+            }
+            .smaller-text{
+                margin-top: 6px;
+                font-size: 14px;
+            }
+        }
+        .right-content{
+            padding: 25px;
+            .little-title{
+                font-size: 1.5em;
+            }
+            .list{
+                margin-top: 10px;
+                line-height: 1.3;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-sm){
+    .main--larger {
+        width: 75%;
+        height: 175vh;
+        justify-content: space-around;
+        .section {
+            height: 50vh;
+        }
+    }
+    .container{
+        width: 87%;
+        margin: auto;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 140px 190px;
+        grid-template-areas:
+        "header header"
+        "left-content right-content";
+        .courses__header{
+            grid-area: header;
+            padding: 18px;
+            gap: 12px;
+            .courses__title{
+                font-size: 21px;
+            }
+            .courses__subtitle{
+                font-size: 15px;
+            }
+            .courses__text{
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+        }
+        .left-content{
+            grid-area: left-content;
+            padding: 18px;
+            gap: 9px;
+            .little-title{
+                font-size: 1.2em;
+            }
+            p{
+                .info{
+                    font-size: 18px;
+                }
+                .big-number{
+                    font-size: 1.9em;
+                }
+            }
+            .smaller-text{
+                margin-top: 6px;
+                font-size: 13px;
+            }
+        }
+        .right-content{
+            padding: 20px;
+            .little-title{
+                font-size: 1.2em;
+            }
+            .list{
+                margin-top: 10px;
+                line-height: 1.3;
+                font-size: 12.5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-xs){
+    .main--larger {
+        width: 80%;
+        height: 185vh;
+        justify-content: space-around;
+        .section {
+            height: 50vh;
+        }
+    }
+    .container{
+        width: 100%;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 155px 190px;
+        grid-template-areas:
+        "header header"
+        "left-content right-content";
+        .courses__header{
+            grid-area: header;
+            padding: 18px;
+            gap: 10px;
+            .courses__title{
+                font-size: 19px;
+            }
+            .courses__subtitle{
+                font-size: 14px;
+            }
+            .courses__text{
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+        }
+        .left-content{
+            grid-area: left-content;
+            padding: 15px;
+            gap: 9px;
+            .little-title{
+                font-size: 1em;
+            }
+            p{
+                .info{
+                    font-size: 16px;
+                }
+                .big-number{
+                    font-size: 1.3em;
+                }
+            }
+            .smaller-text{
+                margin-top: 6px;
+                font-size: 12px;
+            }
+        }
+        .right-content{
+            padding: 10px;
+            .little-title{
+                font-size: 1em;
+            }
+            .list{
+                margin-top: 10px;
+                line-height: 1.2;
+                font-size: 11.5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-xxs){
+    .main--larger {
+        width: 90%;
+        height: 225vh;
+        justify-content: space-around;
+    }
+    .container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .courses__header{
+            width: 100%;
+            padding: 18px;
+            gap: 10px;
+            .courses__title{
+                font-size: 19px;
+            }
+            .courses__subtitle{
+                font-size: 14px;
+            }
+            .courses__text{
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+        }
+        .left-content{
+            width: 100%;
+            padding: 15px;
+            gap: 9px;
+            .little-title{
+                font-size: 1em;
+            }
+            p{
+                .info{
+                    font-size: 16px;
+                }
+                .big-number{
+                    font-size: 1.3em;
+                }
+            }
+            .smaller-text{
+                margin-top: 6px;
+                font-size: 12px;
+            }
+        }
+        .right-content{
+            width: 100%;
+            padding: 10px;
+            .little-title{
+                font-size: 1em;
+            }
+            .list{
+                margin-top: 10px;
+                line-height: 1.2;
+                font-size: 11.5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-xxxs){
+    .main--larger {
+        width: 100%;
+        height: 240vh;
+        justify-content: space-around;
+        border: none;
+        background-color: transparent;
+        box-shadow: 0 0 0 #f1eeed;
+    }
+    .container{
+        width: 80%;
+        .courses__header{
+            padding: 12px;
+            gap: 10px;
+            .courses__title{
+                font-size: 17px;
+            }
+            .courses__subtitle{
+                font-size: 13px;
+            }
+            .courses__text{
+                font-size: 11px;
+                margin-bottom: 8px;
+            }
+        }
+        .left-content{
+            padding: 12px;
+            gap: 7px;
+            .little-title{
+                font-size: 17px;
+            }
+            p{
+                .info{
+                    font-size: 15px;
+                }
+                .big-number{
+                    font-size: 1.3em;
+                }
+            }
+            .smaller-text{
+                margin-top: 6px;
+                font-size: 11px;
+            }
+        }
+        .right-content{
+            width: 100%;
+            padding: 10px;
+            .little-title{
+                font-size: 17px;
+            }
+            .list{
+                margin-top: 9px;
+                line-height: 1.2;
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: vars.$breakpoint-Xs){
+    .main--larger {
+        height: 280vh;
+    }
+    .container{
+        width: 90%;
+        .courses__header{
+            padding: 10px;
+            gap: 8px;
+            .courses__title{
+                font-size: 16px;
+            }
+            .courses__subtitle{
+                font-size: 12px;
+            }
+            .courses__text{
+                font-size: 10.5px;
+                margin-bottom: 7px;
+            }
+        }
+        .left-content{
+            padding: 10px;
+            gap: 7px;
+            .little-title{
+                font-size: 16px;
+            }
+            p{
+                .info{
+                    font-size: 14px;
+                }
+                .big-number{
+                    font-size: 1.1em;
+                }
+            }
+            .smaller-text{
+                margin-top: 6px;
+                font-size: 10px;
+            }
+        }
+        .right-content{
+            padding: 8px;
+            .little-title{
+                font-size: 15px;
+            }
+            .list{
+                margin-top: 9px;
+                line-height: 1.2;
+                font-size: 10px;
+            }
+        }
+    }
+}
