@@ -680,8 +680,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 40px 30px;
-  display: flex;
-  flex-direction: column;
   border-radius: 10px;
 }
 
@@ -730,7 +728,7 @@ body {
   font-size: 13px;
   color: #ffffffb3;
 }
-
+/*------------------*/
 #kira_card{
     color: #333;
 }
@@ -781,7 +779,7 @@ body {
   color: #fff;
   background-color: hsl(219, 29%, 14%);
 }
-
+/*---------------------*/
 .formulario {
     width: 800px;
     margin: 0 auto;

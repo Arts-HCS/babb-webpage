@@ -26,6 +26,9 @@
     line-height: 1.7;
     width: 80%;
 }
+%justified{
+    text-align: justify;
+}
 
 %centered{
     width: 600px;
@@ -40,4 +43,8 @@
     margin-top: 17px;
     font-size: 16px;
     text-align: justify;
+}
+
+%margined{
+    margin-bottom: 40px;
 }

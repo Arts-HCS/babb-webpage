@@ -3,13 +3,6 @@
 @use "../utilities/extends" as ext;
 @use "../utilities/normalize";
 
-.main--shorter {
-    width: 90%;
-    height: 200vh;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
 .section {
     margin-top: 20px;
     @extend %fluid-width;
@@ -239,19 +232,5 @@
     align-items: center;
 }
 
-.text--larger {
-    width: 90%;
-}
 
-  
-.justified {
-    text-align: justify;
-}
-  
-.larger {
-    width: 60%;
-}
-  
-.margined {
-    margin-bottom: 40px;
-}
+

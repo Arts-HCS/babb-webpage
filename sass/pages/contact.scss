@@ -1,0 +1,63 @@
+@use "../utilities/variables" as vars;
+@use "../utilities/mixins" as mixs;
+@use "../utilities/extends" as ext;
+@use "../utilities/normalize";
+
+.formulario{
+    width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #f7f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    .form__title{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        color: #333;
+    }
+    .label{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        display: block;
+        color: #333;
+    }
+    input, select, textarea{
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        &::placeholder{
+            font-family: 'Poppins', sans-serif;
+        }
+        &:focus{
+            border-color: #007BFF;
+            outline: none;
+        }
+    }
+    textarea {
+        resize: none;
+        height: 150px;
+        &::placeholder{
+            font-family: 'Poppins', sans-serif;
+        }
+    };
+    .btn-submit{
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        display: block;
+        margin: 0 auto;
+        @extend %transitioned;
+        &:hover{
+            background-color: #0056b3;
+            transform: scale(1.04);
+        }
+    }
+}

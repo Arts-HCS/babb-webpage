@@ -28,6 +28,11 @@
             .navbar__image{
                 width: 80px;
                 height: 80px;
+                @extend %transitioned;
+                &:hover{
+                    transform: scale(1.06);
+                    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3))
+                }
             }
             .navbar__title{
                 font-size: 3.5em;
@@ -115,6 +120,11 @@
             .navbar__image{
                 width: 80px;
                 height: 80px;
+                @extend %transitioned;
+                &:hover{
+                    transform: scale(1.04);
+                    filter: drop-shadow(0 0 5px rgba(0,0,0,0.4))
+                }
             }
             .navbar__title{
                 font-size: 3.5em;

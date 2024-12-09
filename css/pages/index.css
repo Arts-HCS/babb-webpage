@@ -44,13 +44,6 @@
   scroll-behavior: smooth;
 }
 
-.main--shorter {
-  width: 90%;
-  height: 200vh;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-
 .section {
   margin-top: 20px;
   height: 65vh;
@@ -249,22 +242,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.text--larger {
-  width: 90%;
-}
-
-.justified {
-  text-align: justify;
-}
-
-.larger {
-  width: 60%;
-}
-
-.margined {
-  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=index.css.map */

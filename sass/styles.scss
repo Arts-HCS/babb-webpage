@@ -4,11 +4,12 @@
 @use "./utilities/normalize";
 @use "./layout/footer";
 @use "./layout/header";
+@use "./pages/index.scss";
+@use "./pages/courses.scss";
 @use "./pages/about.scss";
 @use "./pages/contact.scss";
-@use "./pages/courses.scss";
 @use "./pages/method.scss";
-@use "./pages/index.scss";
+
 
 
 body{
