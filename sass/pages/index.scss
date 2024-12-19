@@ -6,7 +6,7 @@
 .section {
     margin-top: 20px;
     @extend %fluid-width;
-    height: 65vh;
+    height: 767px;
     @include mixs.flex--space-center;
 }
 .section__content {
@@ -45,7 +45,7 @@
 }
 
 .section--larger {
-    height: 80vh;
+    height: 945px;
     margin-top: 40px;
 
     .section__content--column {
@@ -230,7 +230,7 @@
 
 @media screen and (max-width: vars.$breakpoint-lg){
     .section--larger{
-        height: 83vh;
+        height: 980px;
         margin-top: 10px;
         .section__content--column {
             .cards {
@@ -311,7 +311,7 @@
 @media screen and (max-width: vars.$breakpoint-md){
     .section {
         margin-top: 20px;
-        height: 60vh;
+        height: 710px;
     }
     .section__content {
         width: 90%;
@@ -377,7 +377,7 @@
         }
     }
     .section--larger {
-        height: 100vh;
+        height: 1180px;
         margin-top: 10px;
         .section__content--column {
             .header__content {
@@ -441,7 +441,7 @@
 @media screen and (max-width: vars.$breakpoint-mmd){
     .section {
         margin-top: 20px;
-        height: 60vh;
+        height: 710px;
     }
     .section__content {
         height: 600px;
@@ -504,7 +504,7 @@
         }
     }
     .section--larger {
-        height: 120vh;
+        height: 1415px;
         margin-top: 40px;
         .section__content--column {
             height: 85%;
@@ -630,7 +630,7 @@
         }
     }
     .section--larger {
-        height: 120vh;
+        height: 1415px;
         margin-top: 40px;
         .section__content--column {
             height: 85%;
@@ -761,7 +761,7 @@
         }
     }
     .section--larger {
-        height: 130vh;
+        height: 1535px;
         margin-top: 50px;
         .section__content--column {
             height: 85%;
@@ -888,8 +888,6 @@
         }
     }
     .section--larger {
-        height: 120vh;
-        margin-top: 40px;
         .section__content--column {
             height: 85%;
             .header__content {
@@ -1022,8 +1020,7 @@
         }
     }
     .section--larger {
-        height: 130vh;
-        margin-top: 50px;
+        height: 1535px;
         .section__content--column {
             margin-top: 40px;
             height: 85%;
@@ -1151,7 +1148,6 @@
         }
     }
     .section--larger {
-        height: 130vh;
 
         .section__content--column {
             margin-top: 40px;

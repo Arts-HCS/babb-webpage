@@ -11,12 +11,12 @@
 
 .header--small{
     @extend %fluid-width;
-    height: 60vh;
+    height: 710px;
     @include mixs.flex-column__center;
     .navbar{
         @include mixs.position-absolute;
         @extend %fluid-width;
-        height: 8em;
+        height: 128px;
         z-index: 2;
         @include mixs.flex--space-between;
         padding: 0 30px;
@@ -108,7 +108,7 @@
     .navbar{
         @include mixs.position-absolute;
         @extend %fluid-width;
-        height: 8em;
+        height: 128px;
         background-color: transparent;
         z-index: 2;
         @include mixs.flex--space-between;
@@ -208,7 +208,7 @@
 @media screen and (max-width: vars.$breakpoint-md){
     .header--small{
         .navbar{
-            height: 6em;
+            height: 96px;
             padding: 0 30px;
             .navbar__content__left{
                 width: 230px;
@@ -247,7 +247,7 @@
 @media screen and (max-width: vars.$breakpoint-sm){
     .header--small{
         .navbar{
-            height: 5em;
+            height: 80px;
             padding: 0 20px;
             .navbar__content__left{
                 width: fit-content;
@@ -287,7 +287,7 @@
 @media screen and (max-width: vars.$breakpoint-xs){
     .header--small{
         .navbar{
-            height: 5em;
+            height: 80px;
             padding: 0 15px;
             .navbar__content__left{
                 gap: 5px;
@@ -324,7 +324,7 @@
 @media screen and (max-width: vars.$breakpoint-xxs){
     .header--small{
         .navbar{
-            height: 5em;
+            height: 80px;
             padding: 0 15px;
             .navbar__content__left{
                 gap: 5px;
@@ -361,7 +361,7 @@
 @media screen and (max-width: vars.$breakpoint-xxxs){
     .header--small{
         .navbar{
-            height: 4.5em;
+            height: 72em;
             padding: 0 5px;
             .navbar__content__left{
                 .navbar__image{
@@ -395,7 +395,7 @@
 @media screen and (max-width: vars.$breakpoint-Xs){
     .header--small{
         .navbar{
-            height: 6em;
+            height: 96px;
             padding: 10px 1px;
             .navbar__content__left{
                 .navbar__image{
@@ -427,7 +427,7 @@
 @media screen and (max-width: vars.$breakpoint-md){
     .banner{
         .navbar{
-            height: 8em;
+            height: 128px;
             padding: 0 30px;
             .navbar__content__left{
                 width: fit-content;
@@ -471,7 +471,7 @@
 @media screen and (max-width: vars.$breakpoint-sm){
     .banner{
         .navbar{
-            height: 7em;
+            height: 112px;
             padding: 0 25px;
             .navbar__content__left{
                 width: fit-content;
@@ -518,7 +518,7 @@
 @media screen and (max-width: vars.$breakpoint-xs){
     .banner{
         .navbar{
-            height: 7em;
+            height: 112px;
             padding: 0 20px;
             .navbar__content__left{
                 width: fit-content;
@@ -565,7 +565,7 @@
 @media screen and (max-width: vars.$breakpoint-xxs){
     .banner{
         .navbar{
-            height: 6em;
+            height: 96px;
             padding: 0 10px;
             .navbar__content__left{
                 .navbar__image{
@@ -607,7 +607,7 @@
 @media screen and (max-width: vars.$breakpoint-xxxs){
     .banner{
         .navbar{
-            height: 6em;
+            height: 96px;
             padding: 0 7px;
             .navbar__content__left{
                 .navbar__image{
@@ -652,7 +652,7 @@
 @media screen and (max-width: vars.$breakpoint-Xs){
     .banner{
         .navbar{
-            height: 6em;
+            height: 96px;
             padding: 0 7px;
             .navbar__content__left{
                 .navbar__image{

@@ -11,7 +11,7 @@
 
 .main--shorter {
     width: 90%;
-    height: 200vh;
+    height: 2360px;
     margin: 0 auto;
     margin-bottom: 50px;
     display: flex;
@@ -26,7 +26,7 @@
 }
 
 .section--bigger{
-    height: 130vh;
+    height: 1535px;
 }
 
 .section__content--column {
@@ -137,7 +137,7 @@
 @media screen and (max-width: vars.$breakpoint-lg){
     .main--shorter {
         width: 90%;
-        height: 270vh;
+        height: 3185px;
         margin: 0 auto;
         margin-bottom: 50px;
         .section{
@@ -231,7 +231,7 @@
         }
     }
     .section--bigger{
-        height: 210vh;
+        height: 2480px;
     }
 }
 
@@ -293,13 +293,13 @@
         }
     }
     .section--bigger{
-        height: 210vh;
+        height: 2480px;
     }
 }
 
 @media screen and (max-width: vars.$breakpoint-mmd){
     .main--shorter {
-        height: 300vh;
+        height: 3540px;
     }
     .section{
         .section__content{
@@ -357,7 +357,7 @@
         }
     }
     .section--bigger{
-        height: 250vh;
+        height: 2950px;
         justify-content: center;
         align-self: center;
     }
@@ -365,7 +365,7 @@
 
 @media screen and (max-width: vars.$breakpoint-xxs){
     .main--shorter {
-        height: 300vh;
+        height: 3540px;
     }
     .section{
         padding: 0;

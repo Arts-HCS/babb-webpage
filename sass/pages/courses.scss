@@ -5,7 +5,7 @@
 
 .main--larger {
     width: 90%;
-    height: 250vh;
+    height: 2950px;
     background-color: vars.$headers-border;
     border: 1px solid #444;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -16,7 +16,7 @@
     .section {
         margin-top: 20px;
         @extend %fluid-width;
-        height: 65vh;
+        height: 767px;
         @include mixs.flex--space-center;
     }
 }
@@ -187,13 +187,13 @@
 @media screen and (max-width: vars.$breakpoint-lg){
     .main--larger {
         width: 90%;
-        height: 260vh;
+        height: 3066px;
         justify-content: space-around;
         margin: 0 auto;
         margin-bottom: 50px;
         border-radius: 20px;
         .section {
-            height: 60vh;
+            height: 767px;
         }
     }
     .container{
@@ -257,13 +257,13 @@
 @media screen and (max-width: vars.$breakpoint-lg){
     .main--larger {
         width: 90%;
-        height: 260vh;
+        height: 3066px;
         justify-content: space-around;
         margin: 0 auto;
         margin-bottom: 50px;
         border-radius: 20px;
         .section {
-            height: 60vh;
+            height: 710px;
         }
     }
 }
@@ -271,13 +271,13 @@
 @media screen and (max-width: vars.$breakpoint-md){
     .main--larger {
         width: 80%;
-        height: 220vh;
+        height: 2595px;
         justify-content: space-around;
         margin: 0 auto;
         margin-bottom: 50px;
         border-radius: 20px;
         .section {
-            height: 60vh;
+            height: 710px;
         }
     }
     .container{
@@ -343,10 +343,10 @@
 @media screen and (max-width: vars.$breakpoint-mmd){
     .main--larger {
         width: 75%;
-        height: 200vh;
+        height: 2360px;
         justify-content: space-around;
         .section {
-            height: 60vh;
+            height: 710px;
         }
     }
     .container{
@@ -411,10 +411,10 @@
 @media screen and (max-width: vars.$breakpoint-sm){
     .main--larger {
         width: 75%;
-        height: 175vh;
+        height: 2065px;
         justify-content: space-around;
         .section {
-            height: 50vh;
+            height: 590px;
         }
     }
     .container{
@@ -479,10 +479,10 @@
 @media screen and (max-width: vars.$breakpoint-xs){
     .main--larger {
         width: 80%;
-        height: 185vh;
+        height: 2185px;
         justify-content: space-around;
         .section {
-            height: 50vh;
+            height: 590px;
         }
     }
     .container{
@@ -544,7 +544,7 @@
 @media screen and (max-width: vars.$breakpoint-xxs){
     .main--larger {
         width: 90%;
-        height: 225vh;
+        height: 2660px;
         justify-content: space-around;
     }
     .container{
@@ -605,7 +605,7 @@
 @media screen and (max-width: vars.$breakpoint-xxxs){
     .main--larger {
         width: 100%;
-        height: 240vh;
+        height: 2830px;
         justify-content: space-around;
         border: none;
         background-color: transparent;
@@ -663,7 +663,7 @@
 
 @media screen and (max-width: vars.$breakpoint-Xs){
     .main--larger {
-        height: 280vh;
+        height: 3303px;
     }
     .container{
         width: 90%;
