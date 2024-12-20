@@ -5,7 +5,7 @@
 
 .footer{
     @extend %fluid-width;
-    height: 590px;
+    height: 430px; /*590px*/
     background-color: #666;
     @include mixs.flex--space-center;
     position: relative;
@@ -82,6 +82,7 @@
 
 @media screen and (max-width: vars.$breakpoint-xs){
     .footer{
+        height: 300px;
         .footer__content{
             width: 90%;
             height: 85%;
@@ -113,7 +114,7 @@
 
 @media screen and (max-width: vars.$breakpoint-xxs){
     .footer{
-        height: 355px;
+        height: 250px;
         .footer__content{
             width: 90%;
             height: 85%;
@@ -144,6 +145,7 @@
 
 @media screen and (max-width: vars.$breakpoint-xxxs){
     .footer{
+        height: 240px;
         .footer__content{
             width: 95%;
             height: 90%;
@@ -175,6 +177,7 @@
 
 @media screen and (max-width: vars.$breakpoint-Xs){
     .footer{
+        height: 220px;
         .footer__content{
             width: 95%;
             height: 95%;

@@ -11,7 +11,7 @@
 
 .header--small{
     @extend %fluid-width;
-    height: 710px;
+    height: 600px; /*710px*/
     @include mixs.flex-column__center;
     .navbar{
         @include mixs.position-absolute;
