@@ -286,6 +286,7 @@
 }
 @media screen and (max-width: vars.$breakpoint-xs){
     .header--small{
+        height: 400px;
         .navbar{
             height: 80px;
             padding: 0 15px;
@@ -361,7 +362,7 @@
 @media screen and (max-width: vars.$breakpoint-xxxs){
     .header--small{
         .navbar{
-            height: 72em;
+            height: 72px;
             padding: 0 5px;
             .navbar__content__left{
                 .navbar__image{

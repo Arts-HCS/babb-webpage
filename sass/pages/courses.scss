@@ -187,13 +187,9 @@
 @media screen and (max-width: vars.$breakpoint-lg){
     .main--larger {
         width: 90%;
-        height: 3066px;
-        justify-content: space-around;
-        margin: 0 auto;
-        margin-bottom: 50px;
-        border-radius: 20px;
+        height: 2050px;
         .section {
-            height: 767px;
+            height: 780px;
         }
     }
     .container{
@@ -202,7 +198,7 @@
         display: grid;
         overflow: hidden;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 220px 1fr;
+        grid-template-rows: 250px 1fr;
         grid-template-areas:
         "header header"
         "left-content right-content";
@@ -254,24 +250,10 @@
     }
 }
 
-@media screen and (max-width: vars.$breakpoint-lg){
-    .main--larger {
-        width: 90%;
-        height: 3066px;
-        justify-content: space-around;
-        margin: 0 auto;
-        margin-bottom: 50px;
-        border-radius: 20px;
-        .section {
-            height: 710px;
-        }
-    }
-}
-
 @media screen and (max-width: vars.$breakpoint-md){
     .main--larger {
         width: 80%;
-        height: 2595px;
+        height: 1450px;
         justify-content: space-around;
         margin: 0 auto;
         margin-bottom: 50px;
@@ -343,7 +325,7 @@
 @media screen and (max-width: vars.$breakpoint-mmd){
     .main--larger {
         width: 75%;
-        height: 2360px;
+        height: 1450px;
         justify-content: space-around;
         .section {
             height: 710px;
@@ -351,9 +333,6 @@
     }
     .container{
         width: 80%;
-        margin: auto;
-        display: grid;
-        overflow: hidden;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 190px 200px;
         grid-template-areas:
@@ -375,7 +354,6 @@
             }
         }
         .left-content{
-            grid-area: left-content;
             padding: 22px;
             gap: 10px;
             .little-title{
@@ -411,7 +389,7 @@
 @media screen and (max-width: vars.$breakpoint-sm){
     .main--larger {
         width: 75%;
-        height: 2065px;
+        height: 1250px;
         justify-content: space-around;
         .section {
             height: 590px;
@@ -420,15 +398,8 @@
     .container{
         width: 87%;
         margin: auto;
-        display: grid;
-        overflow: hidden;
-        grid-template-columns: 1fr 1fr;
         grid-template-rows: 140px 190px;
-        grid-template-areas:
-        "header header"
-        "left-content right-content";
         .courses__header{
-            grid-area: header;
             padding: 18px;
             gap: 12px;
             .courses__title{
@@ -443,7 +414,6 @@
             }
         }
         .left-content{
-            grid-area: left-content;
             padding: 18px;
             gap: 9px;
             .little-title{
@@ -479,7 +449,7 @@
 @media screen and (max-width: vars.$breakpoint-xs){
     .main--larger {
         width: 80%;
-        height: 2185px;
+        height: 1300px;
         justify-content: space-around;
         .section {
             height: 590px;
@@ -489,11 +459,7 @@
         width: 100%;
         grid-template-columns: 200px 200px;
         grid-template-rows: 155px 190px;
-        grid-template-areas:
-        "header header"
-        "left-content right-content";
         .courses__header{
-            grid-area: header;
             padding: 18px;
             gap: 10px;
             .courses__title{
@@ -508,7 +474,6 @@
             }
         }
         .left-content{
-            grid-area: left-content;
             padding: 15px;
             gap: 9px;
             .little-title{
@@ -544,7 +509,7 @@
 @media screen and (max-width: vars.$breakpoint-xxs){
     .main--larger {
         width: 90%;
-        height: 2660px;
+        height: 1550px;
         justify-content: space-around;
     }
     .container{
@@ -605,8 +570,8 @@
 @media screen and (max-width: vars.$breakpoint-xxxs){
     .main--larger {
         width: 100%;
-        height: 2830px;
-        justify-content: space-around;
+        height: 1490px;
+        justify-content: center;
         border: none;
         background-color: transparent;
         box-shadow: 0 0 0 #f1eeed;
@@ -663,7 +628,7 @@
 
 @media screen and (max-width: vars.$breakpoint-Xs){
     .main--larger {
-        height: 3303px;
+        height: 1500px;
     }
     .container{
         width: 90%;
