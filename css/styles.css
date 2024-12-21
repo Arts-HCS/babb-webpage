@@ -1829,7 +1829,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 0px;
+    gap: 10px;
   }
   .section--larger .section__content--column .cards .card {
     width: 245px;
