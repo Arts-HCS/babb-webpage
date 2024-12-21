@@ -310,7 +310,7 @@
 
 @media screen and (max-width: vars.$breakpoint-mmd){
     .main--shorter {
-        height: 2000px;
+        height: 2400px;
         border: 0;
         width: 100%;
         margin: 0;
@@ -371,13 +371,19 @@
         }
     }
     .section--bigger{
-        height: 2000px;
+        height: 1700px;
         justify-content: center;
         align-items: center;
     }
 }
 
 @media screen and (max-width: vars.$breakpoint-xs){
+    .main--shorter {
+        height: 1800px;
+        border: 0;
+        width: 100%;
+        margin: 0;
+    }
     .section{
         .section__content{
             .figure{

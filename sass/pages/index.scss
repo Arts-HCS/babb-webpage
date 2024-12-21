@@ -120,7 +120,9 @@
             margin-bottom: 20px;
             font-weight: 400;
         }
-        .text {
+        .texto {
+            text-align: justify;
+            font-weight: 300;
             margin-top: 0px;
             font-size: 17px;
             line-height: 1.6;
@@ -206,10 +208,6 @@
         }
     }
 }
-
-
-
-
 
 .no-border {
     border-bottom: none;
@@ -383,7 +381,7 @@
                 font-size: 27px;
                 margin-bottom: 20px;
             }
-            .text {
+            .texto {
                 margin-top: 0px;
                 font-size: 15px;
             }
@@ -506,7 +504,7 @@
                     font-size: 1.4em;
                     font-weight: 400;
                 }
-                .text {
+                .texto {
                     margin-top: 0px;
                     font-size: 14.2px;
                     line-height: 1.6;
@@ -635,7 +633,7 @@
                     font-size: 1.3em;
                     font-weight: 400;
                 }
-                .text {
+                .texto {
                     margin-top: 0px;
                     font-size: 14px;
                     line-height: 1.6;
@@ -710,7 +708,6 @@
         .section__content {
             height: 60%;
             .section__text {
-                width: fit-content;
                 .section__title {
                     font-size: 1.3em;
                     font-weight: 400;
@@ -732,13 +729,12 @@
             .teacher-cards{
                 z-index: 3;
                 height: 100%;
-                flex-basis: 90%;
                 gap: 20px;
                 padding: 10px 2px;
                 .card--large{
-                    width: 280px;
+                    width: 250px;
                     height: 260px;
-                    padding: 25px;
+                    padding: 15px;
                     .card__header{
                         gap: 10px;
                         .figure--little{
@@ -756,21 +752,22 @@
                         }
                     }
                     .teacher-text{
-                        font-size: 12.8px;
+                        font-size: 12.4px;
                     }
                 }
             }
             .section__text--centered {
+                width: 200px;
                 .section__titles {
                     text-align: center;
                     font-size: 1.1em;
                     font-weight: 400;
                 }
-                .text {
+                .texto {
                     margin-top: 0px;
+                    width: 100%;
                     font-size: 13.1px;
                     line-height: 1.6;
-                    width: 95%;
                 }
             }
         }
@@ -902,15 +899,16 @@
                 }
             }
             .section__text--centered {
+                width: 80%;
                 .section__titles {
                     text-align: center;
                     font-size: 1.2em;
                     font-weight: 400;
                 }
-                .text {
+                .texto {
                     font-size: 13px;
                     line-height: 1.6;
-                    width: 80%;
+                    width: 100%;
                 }
             }
         }
@@ -1038,15 +1036,16 @@
                 }
             }
             .section__text--centered {
+                width: 95%;
                 .section__titles {
                     text-align: center;
                     font-size: 1.1em;
                     font-weight: 400;
                 }
-                .text {
+                .texto {
                     font-size: 12px;
                     line-height: 1.6;
-                    width: 80%;
+                    width: 100%;
                 }
             }
         }
@@ -1171,10 +1170,9 @@
                 .section__titles {
                     font-size: 1em;
                 }
-                .text {
+                .texto {
                     font-size: 10px;
                     line-height: 1.4;
-                    width: 100%;
                 }
             }
         }

@@ -963,7 +963,9 @@
   margin-bottom: 20px;
   font-weight: 400;
 }
-.section__content .section__text--centered .text {
+.section__content .section__text--centered .texto {
+  text-align: justify;
+  font-weight: 300;
   margin-top: 0px;
   font-size: 17px;
   line-height: 1.6;
@@ -1188,7 +1190,7 @@
     font-size: 27px;
     margin-bottom: 20px;
   }
-  .section__content .section__text--centered .text {
+  .section__content .section__text--centered .texto {
     margin-top: 0px;
     font-size: 15px;
   }
@@ -1296,7 +1298,7 @@
     font-size: 1.4em;
     font-weight: 400;
   }
-  .section .section__content .section__text--centered .text {
+  .section .section__content .section__text--centered .texto {
     margin-top: 0px;
     font-size: 14.2px;
     line-height: 1.6;
@@ -1415,7 +1417,7 @@
     font-size: 1.3em;
     font-weight: 400;
   }
-  .section .section__content .section__text--centered .text {
+  .section .section__content .section__text--centered .texto {
     margin-top: 0px;
     font-size: 14px;
     line-height: 1.6;
@@ -1485,9 +1487,6 @@
   .section .section__content {
     height: 60%;
   }
-  .section .section__content .section__text {
-    width: fit-content;
-  }
   .section .section__content .section__text .section__title {
     font-size: 1.3em;
     font-weight: 400;
@@ -1508,14 +1507,13 @@
   .section .section__content .teacher-cards {
     z-index: 3;
     height: 100%;
-    flex-basis: 90%;
     gap: 20px;
     padding: 10px 2px;
   }
   .section .section__content .teacher-cards .card--large {
-    width: 280px;
+    width: 250px;
     height: 260px;
-    padding: 25px;
+    padding: 15px;
   }
   .section .section__content .teacher-cards .card--large .card__header {
     gap: 10px;
@@ -1534,18 +1532,21 @@
     font-weight: 400;
   }
   .section .section__content .teacher-cards .card--large .teacher-text {
-    font-size: 12.8px;
+    font-size: 12.4px;
+  }
+  .section .section__content .section__text--centered {
+    width: 200px;
   }
   .section .section__content .section__text--centered .section__titles {
     text-align: center;
     font-size: 1.1em;
     font-weight: 400;
   }
-  .section .section__content .section__text--centered .text {
+  .section .section__content .section__text--centered .texto {
     margin-top: 0px;
+    width: 100%;
     font-size: 13.1px;
     line-height: 1.6;
-    width: 95%;
   }
   .section--larger {
     margin-top: 20px;
@@ -1667,15 +1668,18 @@
   .section .section__content .teacher-cards .card--large .teacher-text {
     font-size: 12px;
   }
+  .section .section__content .section__text--centered {
+    width: 80%;
+  }
   .section .section__content .section__text--centered .section__titles {
     text-align: center;
     font-size: 1.2em;
     font-weight: 400;
   }
-  .section .section__content .section__text--centered .text {
+  .section .section__content .section__text--centered .texto {
     font-size: 13px;
     line-height: 1.6;
-    width: 80%;
+    width: 100%;
   }
   .section--larger {
     margin-top: 40px;
@@ -1794,15 +1798,18 @@
   .section .section__content .teacher-cards .card--large .teacher-text {
     font-size: 11.5px;
   }
+  .section .section__content .section__text--centered {
+    width: 95%;
+  }
   .section .section__content .section__text--centered .section__titles {
     text-align: center;
     font-size: 1.1em;
     font-weight: 400;
   }
-  .section .section__content .section__text--centered .text {
+  .section .section__content .section__text--centered .texto {
     font-size: 12px;
     line-height: 1.6;
-    width: 80%;
+    width: 100%;
   }
   .section--larger {
     margin-top: 40px;
@@ -1914,10 +1921,9 @@
   .section .section__content .section__text--centered .section__titles {
     font-size: 1em;
   }
-  .section .section__content .section__text--centered .text {
+  .section .section__content .section__text--centered .texto {
     font-size: 10px;
     line-height: 1.4;
-    width: 100%;
   }
   .section--larger {
     height: 740px;
@@ -2449,7 +2455,7 @@
 @media screen and (max-width: 560px) {
   .main--larger {
     width: 90%;
-    height: 1550px;
+    height: 1600px;
     justify-content: space-around;
   }
   .container {
@@ -2906,7 +2912,7 @@
 }
 @media screen and (max-width: 940px) {
   .main--shorter {
-    height: 2000px;
+    height: 2400px;
     border: 0;
     width: 100%;
     margin: 0;
@@ -2965,12 +2971,18 @@
     line-height: 1.4;
   }
   .section--bigger {
-    height: 2000px;
+    height: 1700px;
     justify-content: center;
     align-items: center;
   }
 }
 @media screen and (max-width: 740px) {
+  .main--shorter {
+    height: 1800px;
+    border: 0;
+    width: 100%;
+    margin: 0;
+  }
   .section .section__content .figure {
     width: 200px;
     height: 200px;
