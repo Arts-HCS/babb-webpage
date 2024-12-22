@@ -3214,6 +3214,7 @@
 .main .formulario textarea {
   resize: none;
   height: 150px;
+  font-family: "Poppins", sans-serif;
 }
 .main .formulario textarea::placeholder {
   font-family: "Poppins", sans-serif;

@@ -41,8 +41,9 @@
         textarea {
             resize: none;
             height: 150px;
+            font-family: vars.$principal-font;
             &::placeholder{
-                font-family: 'Poppins', sans-serif;
+                font-family: vars.$principal-font;
             }
         };
         .btn-submit{
